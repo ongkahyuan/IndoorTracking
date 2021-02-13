@@ -7,4 +7,60 @@
     android:theme="@style/Theme.AppCompat.Light.NoActionBar"
     tools:context=".tracking.imu.imu">
 
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/xCoordinate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x: "
+        android:textSize="20pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/yCoordinate"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/yCoordinate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="y: "
+        android:textSize="20pt"
+        app:layout_constraintBottom_toTopOf="@+id/zCoordinate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xCoordinate" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/zCoordinate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="z: "
+        android:textSize="20pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yCoordinate" />
+
+  <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/offset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="offset"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zeroButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="zero"
+        android:textColor="@color/black"
+        android:id="@+id/zeroButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zCoordinate" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
