@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IndoorTracking">
-        <activity android:name=".tracking.wifi.wifi"></activity>
+        <activity android:name=".tracking.map.BeginMapping"></activity>
+        <activity android:name=".tracking.map.DisplayMap" />
+        <activity android:name=".tracking.wifi.wifi" />
         <activity android:name=".tracking.triangulation.triangulation" />
         <activity
             android:name=".tracking.map.map"
